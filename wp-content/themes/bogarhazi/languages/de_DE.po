@@ -1,0 +1,80 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-08-30 21:16+0200\n"
+"PO-Revision-Date: 2016-09-14 23:12+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.8\n"
+"X-Poedit-Basepath: .\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: de_DE\n"
+
+msgid "Error - Page Not Found"
+msgstr "Error - Seite nicht gefunden"
+
+msgid "No %s available yet."
+msgstr "Kein(e) %s gefunden"
+
+msgid "Read more"
+msgstr "Weiterlesen"
+
+msgid "Previous"
+msgstr "Früher"
+
+msgid "Next"
+msgstr "Nächster"
+
+msgid "Search results for"
+msgstr "Suchergebnisse für"
+
+msgid "No results."
+msgstr "Kein Treffer."
+
+msgid "Search"
+msgstr "Suche"
+
+msgid "Go"
+msgstr "Go"
+
+msgid "Our dogs"
+msgstr "Unsere Hunde"
+
+msgid "Home"
+msgstr "Startseite"
+
+msgid "Gender"
+msgstr "Geschlecht"
+
+msgid "Age"
+msgstr "Alter"
+
+msgid "years old"
+msgstr "Jahre alt"
+
+msgid "Visit me on westieinfo.com!"
+msgstr "Besuch mich an westieinfo.com!"
+
+msgid "Gallery"
+msgstr "Galerie"
+
+msgid "Asia"
+msgstr "Asien"
+
+msgid "Africa"
+msgstr "Afrika"
+
+msgid "Europe"
+msgstr "Europa"
+
+msgid "North and Central America"
+msgstr "Nord- und Mittelamerika"
+
+msgid "South America"
+msgstr "Südamerika"
+
+msgid "Oceania"
+msgstr "Ozeanien"

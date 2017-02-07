@@ -1,0 +1,180 @@
+#contact{
+  padding: 50px 0;
+
+  h2{
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 400;
+    color: #000000;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+
+  p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 0 15px 0;
+  }
+
+  .form-group{
+    margin: 0 0 10px 0;
+
+    .form-control{
+      border-radius: 0;
+      border: none;
+      background: #c2c2c2;
+      color: #114161;
+      padding: 5px 15px;
+      font-family: 'Poppins';
+      font-size: 14px;
+      @include placeholder(#114161);
+      resize: none;
+      @include box-shadow(none);
+    }
+
+    textarea.form-control{
+      padding: 10px 15px;
+    }
+
+    .wpcf7-not-valid-tip{
+      font-family: 'Poppins';
+    }
+  }
+
+  .btn-send{
+    font-family: 'Poppins';
+    font-size: 14px;
+    line-height: 14px;
+    float: right;
+    background: #114161;
+    text-transform: uppercase;
+    color: #ffffff;
+    border: none;
+    padding: 8px 15px;
+    @include transition(color .3s ease, background .3s ease);
+
+    &:hover{
+      background: #c2c2c2;
+      color: #000000;
+      @include transition(color .3s ease, background .3s ease);
+    }
+
+    i{
+      margin-left: 5px;
+    }
+  }
+
+  .wpcf7-response-output{
+    border: none;
+    margin: 20px 0 0 0;
+    padding: 20px 15px 20px 100px;
+    font-family: 'Poppins';
+    font-size: 14px;
+
+    &:before{
+      font-size: 40px;
+      height: 40px;
+      position: absolute;
+      left: 25px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+
+    &.wpcf7-validation-errors,
+    &.wpcf7-mail-sent-ng{
+      background: #ff0000;
+      color: #ffffff;
+      position: relative;
+
+      &:before{
+        @include font-awesome("\f057");
+      }
+    }
+
+    &.wpcf7-mail-sent-ok{
+      background: #398f14;
+      color: #ffffff;
+      position: relative;
+
+      &:before{
+        @include font-awesome("\f05a");
+      }
+    }
+  }
+}
+
+footer.site-footer{
+
+  #footer-info{
+    background: #c2c2c2;
+    padding: 25px 0;
+
+    img{
+
+      @media screen and (max-width: 991px){
+        margin: 0 auto 30px auto;
+        display: block;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+    h3{
+      font-family: 'Lora';
+      font-size: 18px;
+      color: #000000;
+      margin: 0 0 20px 0;
+      padding: 0;
+      font-weight: 400;
+
+      @media screen and (max-width: 991px){
+        text-align: center;
+      }
+    }
+
+    ul{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      @media screen and (max-width: 991px){
+        margin: 0 0 30px 0;
+      }
+
+      li{
+        font-family: 'Lora';
+        font-size: 14px;
+        color: #000000;
+
+        @media screen and (max-width: 991px){
+          text-align: center;
+        }
+
+        a{
+          color: #000000;
+          @include transition(color .3s ease);
+
+          &:hover{
+            color: #114161;
+            @include transition(color .3s ease);
+          }
+        }
+      }
+    }
+
+    #map{
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  #footer-copy-right{
+    font-family: 'Lora';
+    font-size: 14px;
+    color: #114161;
+    padding: 10px 0;
+  }
+}

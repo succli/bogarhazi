@@ -1,0 +1,3 @@
+[14-Nov-2016 21:46:34 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/google-analytics-for-wordpress/googleanalytics.php on line 42
+[05-Feb-2017 16:08:35 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/google-analytics-for-wordpress/googleanalytics.php on line 42
+[06-Feb-2017 04:08:01 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/google-analytics-for-wordpress/googleanalytics.php on line 42

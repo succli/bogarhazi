@@ -1,0 +1,122 @@
+body.single{
+
+  header.navbar-default{
+    border-bottom: none;
+  }
+
+  main{
+
+    @media screen and (min-width: 992px){
+      padding: 104px 0 0 0;
+    }
+  }
+}
+
+section{
+
+  &.post{
+
+    @media screen and (min-width: 768px){
+      background: #e2e2e2;
+    }
+
+    .gallery-image{
+      margin: 0 0 30px 0;
+    }
+
+    article{
+      padding: 0;
+
+      @media screen and (min-width: 992px){
+        padding: 0 100px;
+      }
+
+      @media screen and (min-width: 1200px){
+        padding: 0 200px;
+      }
+
+      .inner{
+        background: #ffffff;
+        padding: 50px 15px;
+        position: relative;
+
+        .date{
+          position: absolute;
+          width: 90px;
+          top: 50px;
+          left: -90px;
+          background: #ffffff;
+          text-align: center;
+          padding: 5px;
+          border-top: 5px #114161 solid;
+          font-family: 'Poppins';
+          font-weight: 700;
+          font-size: 18px;
+          text-transform: uppercase;
+
+          strong{
+            font-size: 40px;
+            line-height: 40px;
+            font-weight: 400;
+            display: block;
+            margin-top: 5px;
+          }
+        }
+      }
+
+      h2{
+        font-family: 'Poppins';
+        font-size: 28px;
+        font-weight: 400;
+        color: #114161;
+        padding: 0;
+        margin: 50px 0 25px 0;
+      }
+
+      .post-thumbnail{
+        overflow: hidden;
+        height: 250px;
+        position: relative;
+
+        img{
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          @include transform(scale(1));
+          @include transition(all .3s ease);
+
+          &:hover{
+            @include transform(scale(1.15));
+            @include transition(all .3s ease);
+          }
+        }
+      }
+
+      .entry{
+
+        p{
+          font-family: 'Poppins';
+          font-size: 15px;
+          font-weight: 400;
+          margin: 0 0 15px 0;
+          color: #000000;
+
+          &:last-of-type{
+            margin: 0;
+          }
+        }
+
+        .attachment-dog-gallery{
+          width: 100%;
+          height: auto;
+          margin: 0 0 15px 0;
+        }
+      }
+    }
+  }
+}

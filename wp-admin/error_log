@@ -1,0 +1,9 @@
+[03-Oct-2016 00:03:29 UTC] PHP Warning:  array_reverse() expects parameter 1 to be array, integer given in /home/bogarhaz/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/fields/gallery.php on line 246
+[03-Oct-2016 00:03:39 UTC] PHP Warning:  array_reverse() expects parameter 1 to be array, integer given in /home/bogarhaz/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/fields/gallery.php on line 246
+[03-Oct-2016 00:04:21 UTC] PHP Warning:  array_reverse() expects parameter 1 to be array, integer given in /home/bogarhaz/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/fields/gallery.php on line 246
+[03-Oct-2016 00:04:36 UTC] PHP Warning:  array_reverse() expects parameter 1 to be array, integer given in /home/bogarhaz/public_html/wp-content/plugins/advanced-custom-fields-pro/pro/fields/gallery.php on line 246
+[03-Oct-2016 21:35:49 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/bogarhaz/public_html/wp-includes/wp-db.php on line 1868
+[03-Oct-2016 21:35:49 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/bogarhaz/public_html/wp-includes/wp-db.php on line 1868
+[03-Oct-2016 23:35:00 UTC] PHP Warning:  Packets out of order. Expected 1 received 0. Packet size=30 in /home/bogarhaz/public_html/wp-includes/wp-db.php on line 1868
+[03-Oct-2016 23:35:00 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/bogarhaz/public_html/wp-includes/wp-db.php on line 1868
+[03-Oct-2016 23:35:00 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/bogarhaz/public_html/wp-includes/wp-db.php on line 1868

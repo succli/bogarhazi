@@ -1,0 +1,78 @@
+@import 'mixins';
+
+html{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+.container{
+	width: 100%;
+
+	@media screen and (min-width: 768px){
+		width: 700px;
+	}
+
+	@media screen and (min-width: 992px){
+		width: 900px;
+	}
+
+	@media screen and (min-width: 1200px){
+		width: 1140px;
+	}
+}
+
+.col-xxs-12{
+
+	@media screen and (max-width: 640px){
+		width: 100%;
+		-ms-flex-preferred-size: 100%;
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+
+a{
+
+	&:hover, &:focus, &:active{
+		text-decoration: none;
+	}
+}
+
+.form-control,
+button,
+.dropdown{
+
+	&:focus, &:active{
+		outline: none;
+	}
+}
+
+@media screen and (min-width: 992px){
+	body.page:not(.home),
+	body.archive,
+	body.single,
+	body.blog,
+	body.search,
+	body.error404{
+
+		main{
+			padding: 109px 0 0 0;
+		}
+	}
+}
+
+@import 'header';
+
+@import 'home';
+
+@import 'page';
+
+@import 'post';
+
+@import 'footer';

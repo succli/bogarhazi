@@ -1,0 +1,114 @@
+#carousel{
+
+  .stellar{
+    height: 613px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    @include background-size(cover);
+
+    @media screen and (max-width: 992px){
+      height: 400px;
+      background-position: 50%!important;
+      background-attachment: initial;
+    }
+  }
+}
+
+#boxes{
+  padding: 50px 0;
+
+  .hentry{
+    border-bottom: 5px solid #c2c2c2;
+
+    @media screen and (max-width: 640px){
+      margin: 0 auto 30px auto;
+      height: auto!important;
+      max-width: 350px;
+    }
+
+    &.dog{
+
+      .entry{
+        padding: 10px 0;
+
+        a{
+          display: block;
+          height: 100%;
+          width: 100%;
+          overflow: hidden;
+
+          &:hover{
+
+            img{
+              @include transform(scale(1.05));
+              @include transition(all .3s ease);
+            }
+          }
+
+          img{
+            @include transform(scale(1));
+            @include transition(all .3s ease);
+          }
+        }
+      }
+    }
+
+    .entry-header{
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      background: #114161;
+      min-height: 50px;
+
+      h2{
+        font-family: 'Poppins';
+        font-size: 18px;
+        margin: 0;
+        text-transform: uppercase;
+        padding: 0 15px;
+
+        a{
+          color: #ffffff;
+        }
+      }
+    }
+
+    .entry{
+      padding: 10px 15px;
+
+      p{
+        font-family: 'Poppins';
+        font-size: 14px;
+        color: #114161;
+        line-height: 16px;
+        margin: 0;
+      }
+    }
+  }
+}
+
+#introduction{
+  background: #114161;
+  padding: 50px 0;
+
+  .wp-post-image{
+    max-width: 100%;
+    height: auto;
+
+    @media screen and (max-width: 991px){
+      display: block;
+      margin: 0 auto 30px auto;
+      width: 300px;
+      height: auto;
+    }
+  }
+
+  p{
+    font-family: 'Poppins';
+    font-size: 14px;
+    color: #ffffff;
+    line-height: 24px;
+    margin: 0;
+  }
+}

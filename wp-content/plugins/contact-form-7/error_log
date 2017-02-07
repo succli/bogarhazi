@@ -1,0 +1,7 @@
+[14-Nov-2016 21:46:34 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[09-Jan-2017 00:21:14 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[09-Jan-2017 00:28:11 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[09-Jan-2017 06:08:50 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[09-Jan-2017 21:14:44 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[05-Feb-2017 04:20:10 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19
+[05-Feb-2017 14:54:26 Europe/Budapest] PHP Fatal error:  Call to undefined function plugin_basename() in /home/bogarhaz/public_html/wp-content/plugins/contact-form-7/wp-contact-form-7.php on line 19

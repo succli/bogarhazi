@@ -1,0 +1,421 @@
+@import 'mixins';
+
+header.navbar-default{
+  background: #114161;
+  border-bottom: #c2c2c2 5px solid;
+  margin: 0;
+
+  @media screen and (max-width: 991px){
+    position: relative;
+  }
+
+  .logo-box{
+    background:  url(../img/logo-bg-oval.png) no-repeat bottom center;
+    height: 160px;
+    width: 256px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+    z-index: 3000;
+    @include transition(height .3s ease);
+
+    @media screen and (max-width: 991px){
+      position: relative;
+      width: auto;
+      height: auto;
+      background: transparent;
+      padding: 10px 0;
+    }
+
+    img{
+      margin: 0 auto;
+      width: 186px;
+      height: 137px;
+      @include transition(width .3s ease, height .3s ease);
+
+      @media screen and (max-width: 991px){
+        width: 150px;
+        height: 110px;
+      }
+    }
+  }
+
+  nav{
+    padding-top: 45px;
+    position: static;
+    @include transition(padding .3s ease);
+
+    .menu{
+      list-style: none;
+      margin: 0 -15px;
+      padding: 0;
+      float: right;
+
+      li{
+        float: left;
+        font-family: 'Poppins';
+        font-size: 20px;
+        font-weight: 400;
+        color: #ffffff;
+        text-transform: uppercase;
+
+        &.open{
+
+          a{
+            background: #c2c2c2;
+          }
+        }
+
+        a{
+          color: #ffffff;
+          display: block;
+          padding: 15px;
+          @include transition(background .3s ease);
+
+          @media screen and (max-width: 1199px){
+            padding: 15px 10px;
+          }
+
+          &:hover{
+            background: #c2c2c2;
+            @include transition(background .3s ease);
+          }
+        }
+
+        .dropdown-menu{
+          position: fixed;
+          width: 100%;
+          left: 0;
+          top: 103px;
+          background: #c2c2c2;
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          border: none;
+          @include box-shadow(none);
+          text-align: center;
+          @include transition(top .3s ease);
+
+          li{
+            float: none;
+            display: inline-block;
+            margin: 0 -4px 0 0;
+            vertical-align: top;
+
+            a{
+              padding: 13px 15px 5px 15px;
+
+              &:hover{
+                background: #114161;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .top-menu{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    @include transition(top .3s ease);
+
+    li{
+      float: left;
+      padding: 0 15px;
+
+      &:first-child{
+        padding-left: 0;
+      }
+
+      &:last-child{
+        padding-right: 0;
+      }
+
+      ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+      }
+
+      a{
+        font-family: 'Poppins';
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+        line-height: 30px;
+        text-transform: uppercase;
+        @include transition(color .3s ease);
+
+        &:hover{
+          color: #c2c2c2;
+          @include transition(color .3s ease);
+        }
+      }
+
+      .form-group{
+        margin: 0;
+
+        .form-control{
+          border: none;
+          border-radius: 0;
+          padding: 6.5px 10px;
+          width: 120px;
+          height: auto;
+          font-family: 'Poppins';
+          font-size: 12px;
+          color: #a1a1a1;
+          text-transform: uppercase;
+          @include placeholder(#a1a1a1);
+        }
+
+        .input-group-addon{
+          padding: 0;
+          border-radius: 0;
+          border: none;
+          background: transparent;
+
+          #searchsubmit{
+            background: #c2c2c2;
+            padding: 9px 10px;
+            margin: 0;
+            font-family: 'Poppins';
+            font-size: 12px;
+            color: #ffffff;
+            text-transform: uppercase;
+            border: none;
+
+          }
+        }
+      }
+    }
+  }
+}
+
+  @media screen and (min-width: 992px){
+    .scrolled{
+
+      header.navbar-default{
+
+        .logo-box{
+          height: 115px;
+          @include transition(height .3s ease);
+
+          img{
+            width: 135px;
+            height: 100px;
+            @include transition(width .3s ease, height .3s ease);
+          }
+        }
+
+        .top-menu{
+          top: -30px;
+          @include transition(top .3s ease);
+        }
+
+        nav{
+          padding-top: 0;
+          @include transition(padding .3s ease);
+
+          .menu li .dropdown-menu{
+            top: 59px;
+            @include transition(top .3s ease);
+          }
+        }
+      }
+  }
+}
+
+@media screen and (min-width: 992px){
+
+
+  body.page:not(.home),
+  body.archive,
+  body.single,
+  body.blog,
+  body.search,
+  body.error404{
+
+    header.navbar-default{
+
+      .logo-box{
+        height: auto;
+        width: 100%;
+        background: transparent;
+        position: relative;
+        left: auto;
+        top: auto;
+
+        img{
+          width: auto;
+          width: 122px;
+          height: 90px;
+          max-width: 100%;
+          margin: 0;
+          @include transition(height .3s ease, width .3s ease);
+        }
+      }
+    }
+
+    &.scrolled{
+
+      header.navbar-default{
+
+        .logo-box{
+
+          img{
+            width: 59px;
+            height: 43px;
+            @include transition(height .3s ease, width .3s ease);
+          }
+        }
+      }
+    }
+  }
+}
+
+#mobile-menu{
+  background: #c2c2c2;
+
+  @media screen and (min-width: 992px){
+    display: none;
+  }
+
+  .container{
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .form-group{
+    margin: 0;
+    width: 100%;
+
+    .input-group{
+      width: 100%;
+    }
+
+    .form-control{
+      border: none;
+      border-radius: 0;
+      padding: 6.5px 10px;
+      height: auto;
+      font-family: 'Poppins';
+      font-size: 12px;
+      color: #a1a1a1;
+      text-transform: uppercase;
+      @include placeholder(#a1a1a1);
+      width: 100%;
+    }
+
+    .input-group-addon{
+      padding: 0;
+      border-radius: 0;
+      border: none;
+      background: transparent;
+      width: 35px;
+
+      #searchsubmit{
+        background: #114161;
+        padding: 9px 10px;
+        margin: 0;
+        font-family: 'Poppins';
+        font-size: 12px;
+        color: #ffffff;
+        text-transform: uppercase;
+        border: none;
+        display: block;
+      }
+    }
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    float: right;
+
+    li{
+      float: left;
+      padding: 0 15px;
+      font-family: 'Poppins';
+      font-size: 14px;
+      line-height: 24px;
+      font-weight: 400;
+      color: #000000;
+      text-transform: uppercase;
+
+      &:last-child{
+        padding-right: 0;
+      }
+
+      button{
+        margin: 0;
+        padding: 0;
+        display: block;
+        font-family: 'Poppins';
+        font-size: 14px;
+        line-height: 24px;
+        font-weight: 400;
+        color: #000000;
+        background: transparent;
+        border: none;
+        @include box-shadow(none);
+      }
+
+      a{
+        color: #000000;
+      }
+    }
+  }
+}
+
+#offcanvas{
+  margin: 0;
+  padding: 0;
+  background: #f2f2f2;
+
+  .menu{
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+
+    li{
+
+      &.menu-item-has-children > a{
+        display: none;
+      }
+
+      &.current-menu-item{
+
+        a{
+          border-color: #114161;
+        }
+      }
+
+      a{
+        display: block;
+        padding: 15px;
+        font-family: 'Poppins';
+        font-size: 16px;
+        color: #000000;
+        border-bottom: 2px #114161 solid;
+        border-left: 4px #f2f2f2 solid;
+      }
+
+      ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+    }
+  }
+}
