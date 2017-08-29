@@ -1,0 +1,11 @@
+{
+    "name": "evista/advanced-custom-fields-pro",
+    "type": "wordpress-plugin",
+    "homepage": "https://www.advancedcustomfields.com/",
+    "licence": "GPLv3",
+    "description": "Advanced Custom Fields PRO plugin",
+    "keywords": ["plugin", "evista"],
+    "require": {
+        "johnpbloch/wordpress": "^4.5"
+    }
+}
